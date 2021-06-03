@@ -45,4 +45,22 @@ const data = [
         trailer:"",
     },
 ];
-export default data;
+function Description ({match,history}) {
+    
+       const movie = data.find((el) => el.name == match.params.name);
+    console.log(movie);
+    console.log(match);
+    return (
+        <div>
+                        <p> this is the description of the movie {movie.description}</p>
+
+            <img src={movie.posterUrl} ></img>
+            <button  onClick={() => history.goBack()}>goBack</button>
+        </div>
+            
+    );
+    
+
+}
+
+export default Description;
