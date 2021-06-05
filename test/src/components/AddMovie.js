@@ -34,9 +34,11 @@ const AddMovie = ({ add }) => {
 
     return (
         <>
+        <br></br>
             <Button variant="primary" onClick={handleShow}>
                 ADD NEW MOVIE
             </Button>
+            <br></br><br></br>
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>

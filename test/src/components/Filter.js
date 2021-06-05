@@ -9,6 +9,7 @@ const Filter = ({ changeInput }) => {
                 size="80"
                 onChange={(e) => changeInput(e.target.value)}
             />
+            <br></br>
         </div>
     );
 };

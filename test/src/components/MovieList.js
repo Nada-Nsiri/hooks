@@ -4,6 +4,7 @@ import MovieCard from "./MovieCard";
 const MovieList = ({ movies, nameSearch }) => {
     return (
         <div className="list">
+            <br></br>
             {movies
                 .filter((el) =>
                     el.name.toLowerCase().includes(nameSearch.toLowerCase())
